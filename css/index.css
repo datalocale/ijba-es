@@ -1,0 +1,629 @@
+@font-face {
+    font-family: rockwell;
+    src: url('../font/rockwell-webfont.eot');
+    src: local(universelLtStd), url('./data/Rockwell.ttf') format('opentype');
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+    color: #fff;
+    font: 300 100.1% "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
+}
+
+#page-slider {
+	width:100%;
+	height:100%;
+	position:absolute;
+	overflow:hidden;
+	min-width:1100px;
+}
+
+.page {
+	width:100%;
+	height:100%;
+	position:absolute;
+	min-height:420px;
+	min-width:800px;
+	background-size:100% 100%;
+}
+
+#bg {
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:url('../img/motif.png') repeat fixed left top transparent;
+	z-index:1;
+}
+
+#title {
+	background-image:url('../img/title.png');
+	width:598px;
+	height:305px;
+	position:absolute;
+	z-index:2;
+	left:70px;
+	top:30px;
+}
+
+#subtitle-container {
+	z-index:2;
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	background-image:url('../img/article-bg.png');
+	height:100px;
+}
+
+#subtitle {
+	background-image:url('../img/subtitle.png');
+	width:746px;
+	height:53px;
+	left:68px;
+	bottom:30px;
+	position:absolute;
+}
+
+#credits {
+	background-image:url('../img/credits.png');
+	width:941px;
+	height:11px;
+	position:absolute;
+	left:70px;
+	bottom:10px;
+}
+
+.slider-button {
+	width:28px;
+	height:28px;
+    position:absolute;
+    z-index:2;
+    cursor:pointer;
+}
+
+.slider-page1 {
+	top:30px;
+}
+
+.slider-page2 {
+	top:835px;
+}
+
+.slide-left {
+	left:100px;
+	background-image:url('../img/slide_left.png');
+}
+
+.slide-right {
+	right:100px;
+	background-image:url('../img/slide_right.png');
+}
+
+.img-bg {
+	min-height: 100%;
+	min-width: 800px;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media screen and (max-width: 800px) {
+	.img-bg {
+		left: 50%;
+		margin-left: -400px;
+	}
+}
+
+#page2 {
+	left:100%;
+}
+
+#page3 {
+	left:200%;
+}
+
+#chapeau1 {
+	width:375px;
+	height:101px;
+	top:5px;
+	position:absolute;
+	background-image:url('../img/chapeau2.png');
+	z-index:2;
+}
+
+#article-container {
+	top:101px;
+	position:absolute;
+	width:388px;
+	z-index:2;
+}
+
+#article-page2 {
+	width:376px;
+	height:657px;
+    font:15px 'Crete Round';
+    color:white;
+	position:relative;
+	background-image:url('../img/article-bg.png');
+	background-repeat:no-repeat;
+	background-position:15px;
+	border-bottom:solid 2px #FFDD00;
+}
+
+#article-page2 p {
+	 padding-left:45px;
+	 padding-right:30px;
+	 padding-top:7px;
+}
+
+.big {
+	font-size:13px;
+}
+
+.little {
+	font-size:9px;
+}
+
+#bigger2 {
+	color:black;
+	background-image:url('../img/bigger2.png');
+}
+
+#bigger {
+	font-size:15px;
+	color:black;
+	padding-right:110px !important;
+	padding-top:0px !important;
+	background-repeat:no-repeat;
+	background-position:26px;
+	background-image:url('../img/bigger.png');
+	margin-top:10px;
+}
+
+#answer {
+	font-size:16px;
+	color:#E5332A;
+	margin-top:10px;
+}
+
+#toggle-article {
+	width:28px;
+	height:44px;
+	left:348px;
+	background-image:url('../img/toggle_article.png');
+	position:relative;
+	cursor:pointer;
+}
+
+#toggle-article-text {
+    color:#FFDD00;
+    font-family: rockwell;
+    font-size:12px;
+    font-weight:bold;
+    left:378px;
+    margin-top:-46px;
+    position:absolute;
+    width:79px;
+}
+
+#data-viewer {
+	z-index:2;
+	left:42%;
+	top:152px;
+	width:600px;
+	height:570px;
+	position:absolute;
+}
+
+#data-viewer * {
+	position:absolute;
+	background-repeat:no-repeat;
+}
+
+#circle-outer {
+	background-image:url('../img/circle-outer.png');
+	width:388px;
+	height:393px;
+	top:80px;
+	left:100px;
+}
+
+#circle-inner {
+	background-image:url('../img/circle-inner.png');
+	width:306px;
+	height:312px;
+	top:39px;
+	left:42px;
+}
+
+#data-text {
+	background-image:url('../img/text_tennis.png');
+    height:256px;
+    left:59px;
+    top:37px;
+    width:239px;
+    background-repeat:no-repeat;
+}
+
+#nb-licences {
+	background-image:url('../img/yellowmen/test.png');
+    left:144px;
+    top:242px;
+	width:81px;
+	height:187px;
+}
+
+.picto-sports {
+	z-index:1;
+}
+
+#tennis {
+	background-image:url('../img/picto_tennis.png');
+	width:68px;
+	height:55px;
+	left:262px;
+	top:16px;
+}
+
+#rugby {
+	background-image:url('../img/picto_rugby.png');
+	width:49px;
+	height:33px;
+	left:355px;
+	top:47px;
+}
+
+#foot {
+	background-image:url('../img/picto_foot.png');
+	width:39px;
+	height:39px;
+	right:125px;
+	top:90px;
+}
+
+#badminton {
+	background-image:url('../img/picto_badminton.png');
+	width:48px;
+	height:74px;
+	right:65px;
+	top:147px;
+}
+
+#petanque {
+	background-image:url('../img/picto_petanque.png');
+	width:48px;
+	height:43px;
+	right:52px;
+	top:250px;
+}
+
+#equitation {
+	background-image:url('../img/picto_equitation.png');
+    bottom:180px;
+    height:48px;
+    right:63px;
+    width:60px;
+}
+
+#golf {
+	background-image:url('../img/picto_golf.png');
+    bottom:94px;
+    height:75px;
+    right:125px;
+    width:31px;
+}
+
+#volley {
+	background-image:url('../img/picto_volley.png');
+    bottom:59px;
+    height:43px;
+    right:196px;
+    width:43px;
+}
+
+#natation {
+	background-image:url('../img/picto_natation.png');
+	width:79px;
+	height:32px;
+	left:254px;
+	bottom:55px;	
+}
+
+#judo {
+	background-image:url('../img/picto_judo.png');
+    height:54px;
+    left:168px;
+    width:67px;
+    bottom:52px;
+}
+
+#hand {
+	background-image:url('../img/picto_hand.png');
+    bottom:121px;
+    height:32px;
+    left:118px;
+    width:33px;
+    background-repeat:no-repeat;
+}
+
+#pelotebasque {
+	background-image:url('../img/picto_pelotebasque.png');
+    bottom:175px;
+    height:82px;
+    left:60px;
+    width:71px;
+}
+
+#basket {
+	background-image:url('../img/picto_basket.png');
+	width:45px;
+	height:45px;
+	top:250px;
+	left:40px;
+}
+
+#athletisme {
+	background-image:url('../img/picto_athletisme.png');
+    top:152px;
+    left:37px;
+    height:67px;
+    width:65px;
+}
+
+#ride {
+	background-image:url('../img/picto_ride.png');
+    left:88px;
+    top:56px;
+    height:77px;
+    width:67px;
+}
+
+#gym {
+	background-image:url('../img/picto_gym.png');
+    left:173px;
+    top:32px;
+    height:60px;
+    width:62px;
+}
+
+#chapeau {
+    top:5px;
+    left:40px;
+    width:200px;
+    height:101px;
+    background-image:url('../img/chapeau.png');
+    background-repeat:no-repeat;
+    position:absolute;
+    z-index:2;
+}
+
+#minibar {
+    top:100px;
+    left:0;
+    width:40px;
+    height:2px;
+    background-image:url('../img/bar.jpg');
+    background-repeat:no-repeat;
+    position:absolute;
+    z-index:2;
+
+}
+
+#bar {
+    top:0;
+    left:0;
+    width:240px;
+    height:2px;
+    background-image:url('../img/bar.jpg');
+    background-repeat:no-repeat;
+    position:relative;
+    z-index:2;
+}
+
+#container {
+    top:100px;
+    position:absolute;
+    z-index:2;
+}
+
+#yellowBar {
+    left:40px;
+    width:2px;
+    height:435px;
+    padding-right:0;
+    background-image:url('../img/yellowBar.jpg');
+    background-repeat:no-repeat;
+    position:relative;
+}
+
+#button {
+    left:212px;
+    width: 28px;
+    height: 44px;
+    background-image: url('../img/toggle_article.png');
+    background-repeat: no-repeat;
+    position: relative;
+    cursor:pointer;
+}
+
+#button-text {
+    top:-44px;
+    left: 255px;
+    width: 80px;
+    position: relative;
+    color: #FD0;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: rockwell;
+}
+
+#imgText {
+    padding-left:100px;
+}
+
+#article {
+    background: rgb(0, 0, 0) transparent;
+    background: rgba(0, 0, 0, 0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    width:1250px;
+    height: 265px;
+    position: relative;
+    border-top: 2px solid #FFDD00;
+    border-bottom: 2px solid #FFDD00;
+    border-right: 2px solid #FFDD00;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#copy {
+	bottom:20px;
+	right:20px;
+    font:300 .7em "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
+    position: absolute;
+    text-align: right;
+    z-index:2;
+}
+
+#copy a {
+    color: #fff;
+}
+
+#icnPage {
+    position:absolute;
+    top:835px;
+    left: 100px;
+    cursor:pointer;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5);
+}
+
+table {
+    padding-left:30px;
+}
+
+td {
+    font-weight:normal;
+    vertical-align:top;
+    padding-top:10px;
+}
+
+td {
+    font: 15px 'Crete Round';
+    padding-left:30px;
+    width:270px;
+}
+
+#podium > p {
+    position:relative;
+    top:240px;
+    width: 815px;
+    padding-top:4px;
+    padding-bottom:4px;
+    padding-left:8px;
+    font: 23px 'Crete Round';
+    border-top: 2px solid #FFDD00;
+    border-bottom: 2px solid #FFDD00;
+}
+
+#podium {
+    width:825px;
+    height:430px;
+    top:100px;
+    z-index:2;
+    position:relative;
+    margin:25px auto 0;
+}
+
+q::before, q::after {
+    content: none;
+}
+
+q {
+    font: 16px 'Crete Round';
+    vertical-align: bottom;
+    color:#FFDD00;
+}
+
+#nb1 {position:relative; top:5px; left: 13px;}
+#nb2 {position:relative; top:8px; left: 9px;}
+#nb3 {position:relative; top:11px; left: 9px;}
+#nb4 {position:relative; top:27px; left: 10px;}
+#nb5 {position:relative; top:50px; left: 8px;}
+#nb6 {position:relative; top:50px; left: 8px;}
+#nb7 {position:relative; top:76px; left: 5px;}
+#nb8 {position:relative; top:153px; left: 4px;}
+#nb9 {position:relative; top:68px; left: 8px;}
+#nb10 {position:relative; top:28px; left: 8px;}
+#nb11 {position:relative; top:28px; left: 8px;}
+#nb12 {position:relative; top:13px; left:9px;}
+#nb13 {position:relative; top:10px; left:9px;}
+#nb14 {position:relative; top:7px; left: 9px;}
+#nb15 {position:relative; top:4px; left: 13px;}
+#nb16 {position:relative; top:0px; left: 13px;}
+
+#sport1 {position:absolute; top:165px; left:0px; width:42px; height:34px; background: url("../img/cheval.png");}
+#sport2 {position:absolute; top:155px; left:50px; width:49px; height:33px; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg);
+     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); background: url("../img/picto_rugby.png");}
+#sport3 {position:absolute; top:159px; left:102px; width:42px; height:34px; background: url("../img/judo.png");}
+#sport4 {position:absolute; top:140px; left:156px; width:42px; height:41px; background: url("../img/gym.png");}
+#sport5 {position:absolute; top:115px; left:208px; width:42px; height:41px; background: url("../img/athle.png");}
+#sport6 {position:absolute; top:123px; left:265px; width:31px; height:31px; background: url("../img/picto_hand.png");}
+#sport7 {position:absolute; top:90px; left:313px; width:39px; height:39px; background: url("../img/picto_foot.png");}
+#sport8 {position:absolute; top:10px; left:359px; width:55px; height:44px; background: url("../img/tennis.png");}
+#sport9 {position:absolute; top:95px; left:416px; width:42px; height:42px; background: url("../img/basket.png");}
+#sport10 {position:absolute; top:133px; left:468px; width:42px; height:42px; background: url("../img/picto_volley.png");}
+#sport11 {position:absolute; top:137px; left:520px; width:42px; height:38px; background: url("../img/boules.png");}
+#sport12 {position:absolute; top:175px; left:572px; width:42px; height:17px; background: url("../img/natation.png");}
+#sport13 {position:absolute; top:130px; left:624px; width:42px; height:65px; background: url("../img/bad.png");}
+#sport14 {position:absolute; top:150px; left:676px; width:42px; height:48px; background: url("../img/street.png");}
+#sport15 {position:absolute; top:155px; left:728px; width:42px; height:49px; background: url("../img/basque.png");}
+#sport16 {position:absolute; top:132px; left:788px; width:31px; height:75px; background: url("../img/picto_golf.png");}
+
+#podium1 {position:absolute; top:209px; left:0px; width:42px; height:6px; background: #FDD203;}
+#podium2 {position:absolute; top:205px; left:52px; width:42px; height:10px; background: #F98308;}
+#podium3 {position:absolute; top:202px; left:104px; width:42px; height:13px; background: #F28815;}
+#podium4 {position:absolute; top:186px; left:156px; width:42px; height:29px; background: #F28815;}
+#podium5 {position:absolute; top:163px; left:208px; width:42px; height:52px; background: #ED681D;}
+#podium6 {position:absolute; top:163px; left:260px; width:42px; height:52px; background: #EA5322;}
+#podium7 {position:absolute; top:137px; left:312px; width:42px; height:78px; background: url("../img/podium2.png");}
+#podium8 {position:absolute; top:60px; left:364px; width:42px; height:155px; background: url("../img/podium1.png");}
+#podium9 {position:absolute; top:147px; left:416px; width:42px; height:68px; background: url("../img/podium3.png");}
+#podium10 {position:absolute; top:185px; left:468px; width:42px; height:30px; background: #EA5322;}
+#podium11 {position:absolute; top:185px; left:520px; width:42px; height:30px; background: #ED681D;}
+#podium12 {position:absolute; top:201px; left:572px; width:42px; height:14px; background: #F28815;}
+#podium13 {position:absolute; top:203px; left:624px; width:42px; height:12px; background: #F9B308;}
+#podium14 {position:absolute; top:206px; left:676px; width:42px; height:9px; background: #F9B308;}
+#podium15 {position:absolute; top:210px; left:728px; width:42px; height:5px; background: #FDD203;}
+#podium16 {position:absolute; top:214px; left:780px; width:42px; height:1px; background: #FDD203;}
+
+#licencie1 {position:absolute; top:285px; left:-2px; width:40px; height:64px;}
+#lnb1 {padding-left: 2px;}
+#licencie2 {position:absolute; top:285px; left:50px; width:40px; height:64px;}
+#lnb2 {padding-left:3px;}
+#licencie3 {position:absolute; top:285px; left:102px; width:40px; height:64px;}
+#licencie4 {position:absolute; top:285px; left:154px; width:40px; height:64px;}
+#lnb4 {padding-left:3px;}
+#licencie5 {position:absolute; top:285px; left:205px; width:40px; height:64px;}
+#lnb5 {padding-left:3px;}
+#licencie6 {position:absolute; top:285px; left:258px; width:40px; height:64px;}
+#licencie7 {position:absolute; top:285px; left:308px; width:40px; height:64px;}
+#lnb7 {padding-left: 2px;}
+#licencie8 {position:absolute; top:285px; left:364px; width:40px; height:64px;}
+#lnb8 {padding-left: 0px;}
+#licencie9 {position:absolute; top:285px; left:416px; width:40px; height:64px;}
+#lnb9 {padding-left:4px;}
+#licencie10 {position:absolute; top:285px; left:472px; width:40px; height:64px;}
+#licencie11 {position:absolute; top:285px; left:518px; width:40px; height:64px;}
+#lnb11 {padding-left:3px;}
+#licencie12 {position:absolute; top:285px; left:573px; width:40px; height:64px;}
+#lnb12 {padding-left:3px;}
+#licencie13 {position:absolute; top:285px; left:627px; width:40px; height:64px;}
+#licencie14 {position:absolute; top:285px; left:677px; width:40px; height:64px;}
+#licencie15 {position:absolute; top:285px; left:729px; width:40px; height:64px;}
+#licencie16 {position:absolute; top:285px; left:778px; width:40px; height:64px;}
