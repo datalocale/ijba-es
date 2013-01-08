@@ -1,0 +1,201 @@
+body 
+{
+	margin: 0;
+	padding: 0;
+	
+}
+
+#background2 
+{
+	background-image:url(../img/motif_trait.png);
+	background-repeat:repeat;
+	position:absolute;
+	z-index:-1;
+	height:6350px;
+	width:100%;
+}
+#background 
+{
+	background-image:url(../img/bgpaper.jpg);
+	height:100%;
+	width:100%;
+	background-repeat:repeat;
+	position:absolute;
+	z-index:-2;
+		height:6350px;
+
+}
+#container 
+{
+	width: 1024px;
+	margin: 0 auto;
+	padding-top: 0px;
+	visibility:hidden;
+}
+
+	/*MENU*/
+
+#menu 
+{
+	bottom: 35%;
+    color: orange;
+    font-size: 150%;
+    margin: 10px 0 0 -20px;
+    position: fixed;
+    width: 150px;
+		visibility:hidden;
+		 z-index: 10;
+
+}
+
+#menu ul 
+{
+	padding: 0;
+	list-style: none;
+	font-family: "Trebuchet MS", Arial;
+	font-size: 25px;
+}
+
+#menu ul li 
+{
+	margin:	5px 5px 5px 5px;
+}
+
+#menu ul li a 
+{
+	text-decoration: none;
+	color: white;
+}
+
+#menu ul li a img 
+{
+	left: -25px;
+}
+
+#menu ul li a img:hover 
+{
+	margin-left: 15px;
+}
+
+	/*IMAGES ET GESTION BOUTONS*/
+
+.image
+{
+	width: 1024px;
+	position:absolute;
+}
+
+#img1scroll, #img2scroll, #img3scroll, #img4scroll, #img5scroll
+{
+	/*rien. ce ne sont juste des div vides servant au scroll.*/
+}
+
+#img1 {	height: 1134px; top:0;  }
+
+#img2 { height: 1642px;top:1134px;  } 
+
+#img3 { height: 1749px; top:2776px;  }
+
+#img4 
+{ 
+	height: 1064px;
+	top:4525px; ; 
+	z-index: 1;
+} 
+
+#img4 a
+{
+	z-index: 20;
+}
+
+#img5 { height: 630px;
+top:5649px;   }
+#preloader {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+#spinner_container {
+    background-image: url("../img/entrance.png");
+    background-repeat: no-repeat;
+    height: 500px;
+    margin: 150px auto;
+    width: 400px;
+}
+#spinner {
+    height: 42px;
+    margin: 300px 0 0 180px;
+    width: 42px;
+
+
+
+}
+#link_blog {
+	height: 17px;
+position: absolute;
+width: 210px;
+z-index: 20;
+left: 405px;
+bottom: 12px;
+}
+#txt {
+	background-image:url(../img/txt.png);
+	    height: 258px;
+    margin: -150px 120px;
+    position: absolute;
+    width: 269px;
+    z-index: 0;
+	display:none;}
+#suite {
+    bottom: 151px;
+    height: 12px;
+    left: 120px;
+    position: absolute;
+    width: 82px;
+    z-index: 0;
+}
+#link_carte2{
+	   height: 15px;
+    left: 576px;
+    position: absolute;
+    top: 762px;
+    width: 105px;
+    z-index: 0;
+}
+#link_carte1 {
+    height: 15px;
+    left: 97px;
+    position: absolute;
+    top: 762px;
+    width: 105px;
+    z-index: 0;
+}
+#link_video{
+height: 20px;
+left: 182px;
+position: absolute;
+bottom: 452px;
+width: 104px;
+z-index: 0;
+}
+#link_article {
+	
+height: 20px;
+left: 182px;
+position: absolute;
+bottom: 381px;
+width: 95px;
+z-index: 20;
+}
+#commonlogo {
+ bottom: 10px;
+    height: 52px;
+    position: absolute;
+    text-align: center;
+    width: 1024px;
+    z-index: 0;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>L'IVG : plus de méthodes, moins de choix ?</title>
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="screen"/>
+		<script src="js/jquery.js" type="text/javascript"></script><!-- bibliotheque jQuery -->
+
+		<script type="text/javascript" src="js/scrolltopcontrol.js"></script>
+
+		<script type="text/javascript" src="js/localscroll/jquery.localscroll.js"></script>
+		<script type="text/javascript" src="js/localscroll/jquery.scrollTo.js"></script>
+	    
+		<script type="text/javascript" src="js/lancement.js"></script><!-- fonction de scroll -->
+        
+        
+        
+        <link rel="icon" type="image/png" href="http://www.adriencolombie.fr/IVG/img/icon.png" />
+        
+        
+      <script type="text/javascript">
+
+
+
+	function citation() {
+$('#txt').fadeIn(300);
+}
+	function moveUp() {
+$('#preloader').delay(1200).fadeOut(350);
+$('#container').css('visibility','visible');
+$('#menu').css('visibility','visible');
+
+}
+ $(window).load(moveUp);
+</script>
+	</head>
+
+	<body>
+    
+     <div id="preloader" style="margin-top:0;">
+       <div id="background2"></div>
+     <div id="background"></div>
+<div id="spinner_container">
+
+<img id="spinner"  src="img/loader.gif">
+</div>
+</div>
+    
+    
+    <div id="background2"></div>
+
+<div id="background"></div>
+		
+	<div id="menu">
+			<ul>
+				<li><a href="#top"></a></li>
+
+				<li><a href="#img1"><img src="img/INTRO.png" alt="PART 1" /></a></li>
+				<li><a href="#img2"><img src="img/ivg2.png" alt="PART 2" /></a></li>
+				<li><a href="#img3"><img src="img/etude3.png" alt="PART 3" /></a></li>
+				<li><a href="#img4"><img src="img/info4.png" alt="PART 4" /></a></li>
+				<li><a href="#img5"><img src="img/credit4.png" alt="PART 5" /></a></li>
+			</ul>
+	</div><!-- #menu -->
+
+	<div id="container">
+		
+		<div id="top"></div>
+		
+		<div id="img1scroll"></div>
+		<div class="image" id="img1"><img src="img/01.png" alt="image 1" title="image 1" /></div>
+		
+		<div id="img2scroll"></div>
+		<div class="image" id="img2"><img src="img/02.png" alt="image 2" title="image 2" />
+      
+
+        </div>
+		
+		<div id="img3scroll"></div>
+		<div class="image" id="img3"><img src="img/03.png" alt="image 3" title="image 3" />
+          <a href="https://www.targetmap.com/viewer.aspx?reportId=15155"><div id="link_carte1"></div> </a> 
+         <a href="https://www.targetmap.com/viewer.aspx?reportId=15259"><div id="link_carte2"></div> </a> 
+            <a href="http://www.dailymotion.com/video/xhfr8h_marie-pierre-martinet_news"><div id="link_video"></div> </a> 
+         <a href="http://www.lefigaro.fr/actualite-france/2011/03/06/01016-20110306ARTFIG00278-les-ivg-en-hausse-chez-les-femmes-de-moins-de-25-ans.php"><div id="link_article"></div> </a> 
+		</div>
+		<div id="img4scroll"></div>	
+		<div class="image" id="img4"><img src="img/04.png" alt="image 4" title="image 4" />
+         <a href="http://www.blog.jevaisbienmerci.net"><div id="link_blog"></div> </a> 
+         <a id="suite" onclick="citation()" ></a><div id="txt"></div> 
+      </div>
+		
+		<div id="img5scroll"></div>
+		<div class="image" id="img5"><img src="img/05.png" alt="image 5" title="image 5" /><div id="commonlogo"><img src="img/common.jpg" alt="" height="50px" /></div></div>
+
+	</div><!-- #container -->		
+
+	</body>
+</html>
